@@ -11,12 +11,14 @@ s = 0
 
 while t < 1000 :
   t = 3 * T
-  s = s + t
-  T = T + 1
+  if t < 1000 :
+    s = s + t
+    T = T + 1
  
 while f < 1000 :
   f = 5 * F
-  s = s + f
-  F = F + 1
+  if f < 1000 :
+    s = s + f
+    F = F + 1
 
 print ("the sum of all the multiples of 3 or 5 below 1000 is,",s)
