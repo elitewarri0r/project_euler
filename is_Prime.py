@@ -1,11 +1,11 @@
 import math
-def ifprime(ip)  :
+def isPrime(ip)  :
     output = 'false'
     ip1 = int(ip)
     
     if ip1 == 2 or ip1 == 3 :
         output = 'true'
-    elif ip1%2 == 0 or ip1 == 1 :
+    elif ip1 % 2 == 0 or ip1 == 1 :
        output = 'false'
     
     else :
@@ -13,15 +13,10 @@ def ifprime(ip)  :
         ip3 = math.ceil(ip2) + 1
         #print ('ip3', ip3)
         for x in range(3,ip3) :
-            if ip1%x == 0 :
+            if ip1 % x == 0 :
                 ouput = 'true'
-            #print ('x', x)
-             
+     
     print (output)
-
-
-#ifprime(9)
-
 for x in range(10):
     #print(x)
-    ifprime(x)
+    isPrime(x)
