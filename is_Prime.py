@@ -15,7 +15,7 @@ def isPrime(ip)  :
         for x in range(3,ip3) :
             if ip1 % x == 0 :
                 output = 'false'
+    return output
      
 for x in range(10):
-    #print(x)
     isPrime(x)
