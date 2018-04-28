@@ -18,4 +18,5 @@ def isPrime(ip)  :
     return output
      
 for x in range(10):
-    isPrime(x)
+    op = isPrime(x)
+    print (op)
