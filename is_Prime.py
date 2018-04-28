@@ -1,6 +1,6 @@
 import math
 def isPrime(ip)  :
-    output = 'false'
+    output = 'true'
     ip1 = int(ip)
     
     if ip1 == 2 or ip1 == 3 :
@@ -14,7 +14,7 @@ def isPrime(ip)  :
         #print ('ip3', ip3)
         for x in range(3,ip3) :
             if ip1 % x == 0 :
-                output = 'true'
+                output = 'false'
      
 for x in range(10):
     #print(x)
