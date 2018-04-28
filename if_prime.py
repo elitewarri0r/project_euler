@@ -23,4 +23,4 @@ def ifprime(ip)  :
     print (output)
 
     for x in range(11) :
-        
+        ifprime(x)
