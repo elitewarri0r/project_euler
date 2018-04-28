@@ -1,10 +1,11 @@
 def ifprime(ip)  :
     output = 0
     ip1 = int(ip)
-    if ip1%2 == 0 and ip1 != 2 or ip1 == 1 :
-       output = 'false'
+    
     if ip1 == 2 or ip1 == 3 :
         output = 'true'
+    if ip1%2 == 0 or ip1 == 1 :
+       output = 'false'
     
     else :
         checker = 1
