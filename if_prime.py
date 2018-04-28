@@ -1,4 +1,5 @@
 def ifprime(ip)  :
+    import math
     output = 0
     ip1 = int(ip)
     
@@ -9,7 +10,6 @@ def ifprime(ip)  :
     
     else :
         checker = 1
-        import math
         ip2 = math.sqrt(ip1)
         ip3 = math.ceil(ip2) + 1
         #print ('ip3', ip3)
