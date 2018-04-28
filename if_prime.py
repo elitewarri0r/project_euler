@@ -4,7 +4,7 @@ def ifprime(ip)  :
     
     if ip1 == 2 or ip1 == 3 :
         output = 'true'
-    if ip1%2 == 0 or ip1 == 1 :
+    elif ip1%2 == 0 or ip1 == 1 :
        output = 'false'
     
     else :
