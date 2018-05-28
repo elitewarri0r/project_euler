@@ -7,6 +7,25 @@ Find the sum of all numbers, less than one million, which are palindromic in bas
 
 '''
 
+import math
+def binNum(num):
+    quotient = 0
+    quotient = math.floor(num/2)
+    if num % 2 == 0 :
+        base2 = '0' 
+    else :
+        base2 = '1' 
+    while quotient !=1 :
+        quotient = math.floor(num/2)
+        if quotient % 2 == 0 :
+            base2 = '0' + base2
+        else :
+            base2 = '1' + base2
+        num = quotient
+        
+    base2 = int(base2)
+    return base2
+ 
 
 def palindrome(num):
     if num[::-1] == num:
@@ -19,7 +38,7 @@ count = 0
 for x in range(1000001) :
     xa = str(x)
     if palindrome(xa) == 1 :
-        xb = bin(x)
+        xb = binNum(x)
         xa = str(xb)
         xa = xa[2:]
         if palindrome(xa) == 1 :
