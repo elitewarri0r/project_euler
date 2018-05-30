@@ -8,7 +8,7 @@ f1 = 1
 f2 = 2
 fandf = 0
 count = 0
-output = 0
+output = 2
 maxval = 4000001
 
 while fandf < maxval :
