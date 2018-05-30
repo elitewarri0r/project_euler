@@ -2,7 +2,7 @@
 
 print ('problem 1')
 output = 0
-# Assigning a variable named output the value 0
+# Assigning a variable named output with the value 0
 input1 = 1001
 # The limit for the number time the for loop should run
 for x in range (1,input1) :
