@@ -8,7 +8,7 @@ Find the sum of all numbers, less than one million, which are palindromic in bas
 '''
 
 import math
-def twobinary(num):
+def tobinary(num):
     quotient = 0
     if num % 2 == 0 :
         base2 = '0' 
@@ -37,7 +37,7 @@ count = 0
 for x in range(1000001) :
     xa = str(x)
     if palindrome(xa) == 1 :
-        xb = twobinary(x)
+        xb = tobinary(x)
         xa = str(xb)
         xa = xa[2:]
         if palindrome(xa) == 1 :
