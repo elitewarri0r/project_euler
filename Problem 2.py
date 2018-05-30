@@ -9,7 +9,7 @@ f2 = 2
 fandf = 0
 count = 0
 output = 0
-maxval = 100
+maxval = 4000001
 
 while fandf < maxval :
     print (fandf)
