@@ -20,7 +20,7 @@ Hence the first 12 terms will be:
 
 The 12th term, F12, is the first term to contain three digits.
 
-What is the index of the first term in the Fibonacci sequence to contain 1000 digi
+What is the index of the first term in the Fibonacci sequence to contain 1000 digihts
 '''
 
 fa = 1
@@ -29,10 +29,12 @@ equal = 0
 op = 0
 count = 2
 
+# When this loop runs it will genatrate the series and find the 1000 digiht number
 while 0 == 0 :
     count = count + 1
     equal = fa + fb
     equal = str(equal)
+    # Hee we check that is the number is the answer
     if len(equal) == 1000 :
         op = equal
         break
@@ -41,6 +43,6 @@ while 0 == 0 :
         fa = fb
         fb = equal
         
-print(op)
+print(op,'is the the first term in the Fibonacci sequence to contain 1000 digihts')
 print('  ')
-print(count)
+print(count,'is the index of the first term in the Fibonacci sequence to contain 1000 digihts')
