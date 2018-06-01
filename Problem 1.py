@@ -3,7 +3,7 @@
 print ('problem 1')
 output = 0
 # Assigning a variable named output with the value 0
-input1 = 1001
+input1 = int(input('enter a number : '))
 # The limit for the number time the for loop should run
 for x in range (1,input1) :
 # A for loop that runs 1000 times
