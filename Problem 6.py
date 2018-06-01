@@ -1,27 +1,25 @@
 
 '''
-The sum of the squares of the first ten natural numbers is,
-1x1 + 2x2 + ... + 10x10 = 385
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 
-The square of the sum of the first ten natural numbers is,
-(1 + 2 + ... + 10)x(1 + 2 + ... + 10) = 55x55 = 3025
-
-Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
-
-Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
-
-
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 '''
-totalsq = 0
-eachsq = 0
 
-for x in range(1,101) :
-    totalsq = totalsq + x
-    eachsq = eachsq + (x*x)
 
-totalsq = totalsq * totalsq
-print(totalsq)
-print(eachsq)
-output = totalsq - eachsq
+op = 0
+opc = 0
 
-print ('The final output is ',output)
+# When this loop runs we fish out the number
+for x in range(1,300000000 ) :
+    opc = 0
+    # Checking if the number is dvivsable by all number 1 to 20
+    for z in range(1,21) :
+        if x%z == 0 :
+            opc = opc + 1
+    # Checking if the number is the answer
+    if opc == 20 :
+        print('hello')
+        op = x
+        break
+
+print(op,'is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20.')
