@@ -1,3 +1,8 @@
+'''
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+
+What is the 10001st prime number?
+'''
 import math
 def isPrime(ip)  :
     output = 1
@@ -18,13 +23,13 @@ def isPrime(ip)  :
 
 checker = 0
 ouputa = 0
-
-for x in range(2,99999999999999999999) :
+# When this loop runs we finds the primes and when we get the 10 001 st one we will print it
+for x in range(2,1000000000) :
     if isPrime(x) == 1 :
         checker = checker  + 1
-        #print(checker)
+    # Here we check if it is the 10001 st prime
     if checker == 10001 :
         outputa = x
         break
 
-print(outputa)
+print(outputa,'is the 10 001 st prime number')
