@@ -11,18 +11,10 @@ Find the sum of the digits in the number 100!
 
 number = 100
 op = 1
+# Adding all the numbers
 for x in range(1,number + 1 ) :
     op = op * x
-
-print(op)    
-op = str(op)
-length = len(op)
-hi = 0
-addition = 0
-
-for x in range(0,length) :
-    hi = op[x]
-    hi = int(hi)
-    addition = addition + hi
-
-print(addition)
+    
+# adding all the digihts     
+addition = sum(list(str(op)))
+print(addition,'is the sum of the digits in the number 100!')
